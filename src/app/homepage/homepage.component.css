@@ -1,0 +1,109 @@
+.sliderElements,
+.sliderElements figure,
+.sliderControls {
+    margin: 0;
+}
+ 
+.sliderElements:after {
+    content: ".";
+    display: block;
+    height: .1px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+ 
+.cssSlider {
+    overflow-x: hidden;
+    background-color: black;
+}
+ 
+.sliderElements {
+    list-style: none;
+    position: relative;
+    left: 0;
+    width: 400%;
+    margin-bottom: .8em;
+    padding: 0;
+    -webkit-transition: left .8s ease-in-out;
+    -moz-transition: left .8s ease-in-out;
+    -o-transition: left .8s ease-in-out;
+    transition: left .8s ease-in-out;
+    background-color: black;
+}
+ 
+.sliderElements > li {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+ 
+#slide02:checked ~ .sliderElements {
+    left: -100%;
+}
+ 
+#slide03:checked ~ .sliderElements {
+    left: -200%;
+}
+ 
+#slide04:checked ~ .sliderElements {
+    left: -300%;
+}
+ 
+/* image caption */
+.sliderElements figcaption {
+    display: block;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    padding: .4em;
+    background: rgba(0,0,0,.5);
+}
+ 
+/* images responsive */
+.sliderElements img {
+    width: 100%;
+    height: 700px;
+}
+ 
+ 
+/* inputs slide into nothing */
+.cssSlider input {
+    position: absolute;
+    left: -99999px;
+}
+ 
+/* slide points position center*/
+.sliderControls {
+    text-align: center;
+}
+ 
+/* controls in one row */
+.sliderControls li {
+    display: inline-block;
+}
+ 
+/* controls dimension */
+.sliderControls label {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+ 
+/* attribut selector and indirect downstream combiner to control the labels */
+.sliderControls label:hover,
+#slide01:checked ~ .sliderControls label[for="slide01"],
+#slide02:checked ~ .sliderControls label[for="slide02"],
+#slide03:checked ~ .sliderControls label[for="slide03"],
+#slide04:checked ~ .sliderControls label[for="slide04"] {
+    background: #ddd;
+    color: #ddd;
+}

@@ -1,0 +1,44 @@
+.link{
+    cursor: pointer;
+    
+    
+}
+link:hover{
+    text-decoration: underline;
+}
+
+#flex-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+ }
+ .panel-test2 {
+   display: -webkit-flex; 
+   display: -ms-flexbox; 
+   display: flex;
+ 
+   width: 49%;
+   padding: 0px;
+   float: left;
+   margin: 6px;
+   border: 1px solid rgb(232, 229, 229);
+   box-shadow: 1px 3px 3px rgb(118, 116, 116);
+   border-radius: 15px;
+ }
+ .panel-test1 {
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex;
+  
+    height: 30%;
+    width: 49%;
+    padding: 0px;
+    float: left;
+    margin: 6px;
+    border: 1px solid rgb(232, 229, 229);
+    box-shadow: 1px 3px 3px rgb(118, 116, 116);
+    border-radius: 15px;
+  }

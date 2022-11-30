@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "category":"smartphone",
+        "productName":"Iphone",
+        "price":999
+    },
+    {
+        "id":2,
+        "category":"smartphone",
+        "productName":"Google Pixel",
+        "price":799
+    },
+    {
+        "id":3,
+        "category":"tablet",
+        "productName":"Ipad",
+        "price":899
+    },
+    {
+        "id":4,
+        "category":"tablet",
+        "productName":"GoogleTab",
+        "price":599
+    }
+]

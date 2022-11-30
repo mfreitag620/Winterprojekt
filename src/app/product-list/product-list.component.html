@@ -1,0 +1,21 @@
+<div class="container">
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Name</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.productName}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngFor="let product of products">
+    <p>{{product.id}}</p>
+</div>

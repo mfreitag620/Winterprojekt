@@ -1,0 +1,29 @@
+nav{
+    background-color: black;
+    padding: 10px;
+}
+
+nav img{
+    width: 10%;
+
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+li a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.shoppingCart {
+    height: 5%;
+}
