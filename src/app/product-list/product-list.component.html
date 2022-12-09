@@ -1,3 +1,4 @@
+<!--
 <div class="container">
     <table>
         <thead>
@@ -16,6 +17,30 @@
         </tbody>
     </table>
 </div>
+
+
 <div *ngFor="let product of products">
-    <p>{{product.id}}</p>
+    <p>{{product.productName}}</p>
 </div>
+
+
+
+-->
+<ul >
+    <li *ngFor="let product of products">
+        <button type="button" (click)="product">
+            {{product.productName}}
+        </button>
+    </li>
+</ul>
+
+<ul >
+    <li *ngFor="let product of products">        
+            {{product.productName}}       
+    </li>
+</ul>
+
+
+
+<!-- <button (click)="getPhone(newPhone)"> get new name</button> -->
+

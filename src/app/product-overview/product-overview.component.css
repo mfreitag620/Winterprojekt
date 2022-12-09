@@ -1,3 +1,36 @@
-mat-grid-tile {
-    background: lightblue;
-  }
+
+
+.container {
+  padding: 3em;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.container .quote {
+  padding: 2em;
+  border-radius: 0.3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.container .quote p {
+  margin-top: 0;
+}
+.container .quote span {
+  font-weight: bold;
+  position: relative;
+  margin-left: 15px;
+  float: right;
+}
+.container .quote span:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  border-bottom: 1px solid black;
+  top: 10px;
+  left: -15px;
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}

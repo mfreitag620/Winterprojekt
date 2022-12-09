@@ -17,10 +17,12 @@ export class ProductListComponent implements OnInit {
 
   constructor() { }
 
-  products: Product[] = productData;
+   products: Product[] = [];
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.products = productData.filter(product => product.category === "smartphone");
+  }
+  
 }
 
 

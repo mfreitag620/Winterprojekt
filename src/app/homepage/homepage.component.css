@@ -51,7 +51,6 @@
     left: -300%;
 }
  
-/* image caption */
 .sliderElements figcaption {
     display: block;
     color: #fff;
@@ -62,30 +61,24 @@
     background: rgba(0,0,0,.5);
 }
  
-/* images responsive */
 .sliderElements img {
     width: 100%;
     height: 700px;
 }
  
- 
-/* inputs slide into nothing */
-.cssSlider input {
+ .cssSlider input {
     position: absolute;
     left: -99999px;
 }
  
-/* slide points position center*/
 .sliderControls {
     text-align: center;
 }
  
-/* controls in one row */
 .sliderControls li {
     display: inline-block;
 }
  
-/* controls dimension */
 .sliderControls label {
     width: 20px;
     height: 20px;
@@ -107,3 +100,9 @@
     background: #ddd;
     color: #ddd;
 }
+
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }

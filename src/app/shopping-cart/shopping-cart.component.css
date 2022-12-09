@@ -1,7 +1,5 @@
 .link{
-    cursor: pointer;
-    
-    
+    cursor: pointer; 
 }
 link:hover{
     text-decoration: underline;
@@ -41,4 +39,9 @@ link:hover{
     border: 1px solid rgb(232, 229, 229);
     box-shadow: 1px 3px 3px rgb(118, 116, 116);
     border-radius: 15px;
+  }
+  .button{
+    background-color: blue;
+    color: white;
+    display: inline-block;
   }

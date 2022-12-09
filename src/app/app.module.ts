@@ -6,6 +6,7 @@ import {
    MatButtonModule,
    MatGridListModule,
    MatCardModule,
+   MatProgressBarModule,
   } from '@angular/material';
 
 
@@ -18,12 +19,14 @@ import { ProductComponent } from './productMask/product.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductOverviewComponent } from './product-overview/product-overview.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { TabletComponent } from './tablet/tablet.component';
 
 const myRoutes: Routes = [
   {path: 'home', component: HomepageComponent},
   {path: 'product', component: ProductComponent},
   {path: 'shoppingCart', component: ShoppingCartComponent},
   {path: 'productOverview', component: ProductOverviewComponent},
+  {path: 'tablet', component: TabletComponent},
 ];
 
 @NgModule({
@@ -35,7 +38,8 @@ const myRoutes: Routes = [
     ProductComponent,
     ShoppingCartComponent,
     ProductOverviewComponent,
-    ProductListComponent
+    ProductListComponent,
+    TabletComponent
   ],
   imports: [
     RouterModule.forRoot(myRoutes),
@@ -45,6 +49,7 @@ const myRoutes: Routes = [
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
