@@ -1,47 +1,40 @@
-.link{
-    cursor: pointer; 
+.container {
+  padding: 3em;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-link:hover{
-    text-decoration: underline;
+.container .quote {
+  padding: 2em;
+  border-radius: 0.3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.container .quote p {
+  margin-top: 0;
+}
+.container .quote span {
+  font-weight: bold;
+  position: relative;
+  margin-left: 15px;
+  float: right;
+}
+.container .quote span:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  border-bottom: 1px solid black;
+  top: 10px;
+  left: -15px;
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
-#flex-container {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
- }
- .panel-test2 {
-   display: -webkit-flex; 
-   display: -ms-flexbox; 
-   display: flex;
- 
-   width: 49%;
-   padding: 0px;
-   float: left;
-   margin: 6px;
-   border: 1px solid rgb(232, 229, 229);
-   box-shadow: 1px 3px 3px rgb(118, 116, 116);
-   border-radius: 15px;
- }
- .panel-test1 {
-    display: -webkit-flex; 
-    display: -ms-flexbox; 
-    display: flex;
-  
-    height: 30%;
-    width: 49%;
-    padding: 0px;
-    float: left;
-    margin: 6px;
-    border: 1px solid rgb(232, 229, 229);
-    box-shadow: 1px 3px 3px rgb(118, 116, 116);
-    border-radius: 15px;
-  }
   .button{
-    background-color: blue;
+    background-color: dodgerblue;
     color: white;
     display: inline-block;
   }

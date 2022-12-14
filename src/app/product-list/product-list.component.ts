@@ -21,8 +21,18 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = productData.filter(product => product.category === "smartphone");
+  };
+
+  sayHello(){
+    console.log("Hello From me");
   }
-  
+  higlightBGcolor(a:number, b:number, c:number){
+    console.log("highlighted"+a+b+c);
+  }
+  inputBox(){
+    console.log("input");
+  }
+
 }
 
 
