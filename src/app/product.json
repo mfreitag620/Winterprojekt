@@ -23,5 +23,17 @@
         "category":"tablet",
         "productName":"GoogleTab",
         "price":599
+    },
+    {
+        "id":5,
+        "category":"smartphone",
+        "productName":"Googlephone",
+        "price":699
+    },
+    {
+        "id":6,
+        "category":"smartphone",
+        "productName":"Nokia",
+        "price":10
     }
 ]
