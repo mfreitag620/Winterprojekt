@@ -1,22 +1,46 @@
-<div class="container">
-    <div class="img">         
-    <div class="quote" routerLink="/productOverview"><img src="assets/414McDKPgPL._AC_UL480_FMwebp_QL65_.webp" class="responsive">
-        <p>SamsungTab</p>
-        <span>499€</span>
-    </div>
-</div>
+<div class="products">
+    <div *ngFor="let product of products" class="product">
+      <table>
+        <tr>
+          <td>
+            <div style="width:325px; height:325px">
+              <img src= "{{product.pic}}" alt="Block 1" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <p>Description: {{product.description}}<br>{{product.price}}€</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>{{product.name}}</h2>
+          </td>
+        </tr>
+      
 
-<div class="img">
-    <div class="quote"><img src="assets/61zdQQORNML._AC_UL480_FMwebp_QL65_.webp" class="responsive">
-        <p>IPad</p>
-        <span>899€</span>
+        
+        
+        
+        
+          <tr>
+            <td><input type="number" name="product.count" [(ngModel)]="product.count"></td>
+          </tr>
+          <tr>
+            <td><button class="button1" (click)="this.addToCart(product)">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><button>Buy Now </button></td>
+          </tr>
+        </table>
+    <!-- <button class="button2" (click)="this.deleteProduct(product.id)">Delete</button>   -->
+      
     </div>
-</div>
-<div class="img">
-    <div class="quote"><img src="assets/71qSWAwzvYS._AC_UY327_FMwebp_QL65_.webp" class="responsive">
-        <p>keine Ahnung wie das heißt</p>
-        <span>299€</span>
-    </div>
-</div>
+    <div id="snackbar">Item added...</div>
 
-</div>
+    </div>
+
+

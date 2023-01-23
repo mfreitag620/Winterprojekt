@@ -2,13 +2,34 @@
     <div class="img">         
     <div class="quote"><img  class="responsive">
         <p>Warenkorb</p>
-        <span></span>
+        <div *ngIf="this.products.length > 0">
+            <table>
+                <tr>
+                    <th>Artikelnr.</th>
+                    <th>Name</th>
+                    <th>Anzahl</th>
+                    <th>Preis</th>
+                    <th></th>
+                </tr>
+                <tr *ngFor="let product of products">
+                    <td>{{product.articleNr}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.count}}x</td>
+                    <td>{{product.price}}€</td>
+                    <td>
+                        <button (click)="this.deleteFromCart(product.id)">Delete</button>
+                    </td>
+                </tr>
+            </table>
+            <br>
     </div>
 </div>
 
 <div class="img">
     <div class="quote"><img src="" class="responsive">
-        <p>Zwischensumme</p>
+        <p>Gesamtsumme: {{this.sum}}€</p>
+</div>
+<p *ngIf="this.products.length == 0">Warenkorb ist leer!</p>
         <span></span>
     </div>
 </div>

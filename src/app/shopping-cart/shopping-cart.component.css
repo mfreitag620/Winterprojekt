@@ -33,9 +33,13 @@
   height: auto;
 }
 
-  .button{
-    background-color: dodgerblue;
-    color: white;
-    display: inline-block;
-    margin: 10px;
-  }
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  max-width: 150px;
+  height: 100%;
+  max-height: 60px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}

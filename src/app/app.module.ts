@@ -20,9 +20,12 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductOverviewComponent } from './product-overview/product-overview.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TabletComponent } from './tablet/tablet.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const myRoutes: Routes = [
   {path: 'home', component: HomepageComponent},
+  
   {path: 'product', component: ProductComponent},
   {path: 'shoppingCart', component: ShoppingCartComponent},
   {path: 'productOverview', component: ProductOverviewComponent},
@@ -50,6 +53,8 @@ const myRoutes: Routes = [
     MatGridListModule,
     MatCardModule,
     MatProgressBarModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
