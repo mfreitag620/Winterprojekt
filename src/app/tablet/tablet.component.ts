@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
+import { ProductTablet } from 'src/productTablet';
 
 @Component({
   selector: 'app-tablet',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabletComponent implements OnInit {
 
-  constructor() { }
+    productTablets: ProductTablet[] = []
+
+
+
+  constructor(private productServicec: ProductService) { }
 
   ngOnInit(): void {
+    this.productTablets = this.productServicec.getProductTablets();
   }
 
+  addToCart(productTablet: ProductTablet){
+    this.productServicec.addProductTablet(productTablet);
+    var x = document.getElementById("snackbar");
+    if(x && productTablet.count > 0){
+      x.className = "show";
+      setTimeout(function(){ x!.className = x!.className.replace("show", ""); }, 3000);
+    }
+  }
 }

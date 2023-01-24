@@ -22,6 +22,9 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { TabletComponent } from './tablet/tablet.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
+
+
 
 const myRoutes: Routes = [
   {path: 'home', component: HomepageComponent},
@@ -42,7 +45,8 @@ const myRoutes: Routes = [
     ShoppingCartComponent,
     ProductOverviewComponent,
     ProductListComponent,
-    TabletComponent
+    TabletComponent,
+    ImageSliderComponent
   ],
   imports: [
     RouterModule.forRoot(myRoutes),

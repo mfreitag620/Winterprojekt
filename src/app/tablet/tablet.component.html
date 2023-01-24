@@ -1,4 +1,4 @@
-   <div class="container">
+   <!--<div class="container">
         <div class="quote" routerLink="/productOverview">        
                 <p>Produktname</p>
                 <span>Preis</span>
@@ -95,4 +95,39 @@
         <p>Produktname</p>
         <span>Preis</span>
     </div>               
-   </div>
+   </div>-->
+
+   <div class="products">
+    <div *ngFor="let productTablets of productTablets" class="product">
+      <table>
+        <tr>
+          <td>
+            <div style="width:325px; height:325px">
+              <img src= "{{productTablets.pic}}" alt="Block 1" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <p>Description: {{productTablets.description}}<br>{{productTablets.price}}€</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>{{productTablets.name}}</h2>
+          </td>
+        </tr>
+        <tr>
+        <td>
+          <input type="number" name="productTablet.count" [(ngModel)]="productTablets.count">
+        </td>  
+        </tr>
+          <tr>
+            <td><button class="button1" (click)="this.addToCart(productTablets)">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><button>Buy Now </button></td>
+          </tr>
+        </table>
