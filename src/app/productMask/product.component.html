@@ -3,8 +3,8 @@
       <table>
         <tr>
           <td>
-            <div style="width:325px; height:325px">
-              <img src= "{{product.pic}}" alt="Block 1" />
+            <div style="width:325px; height:325px" routerLink="/productOverview">
+              <img src= "{{product.pic}}" alt="Block 1"/>
             </div>
           </td>
         </tr>
@@ -20,22 +20,16 @@
             <h2>{{product.name}}</h2>
           </td>
         </tr>
-      
-
-        
-        
-        
-        
-          <tr>
-            <td><input type="number" name="product.count" [(ngModel)]="product.count"></td>
-          </tr>
-          <tr>
-            <td><button class="button1" (click)="this.addToCart(product)">Add to Cart</button></td>
-          </tr>
-          <tr>
-            <td><button> Buy Now </button></td>
-          </tr>
-        </table>
+        <tr>
+          <td><input type="number" name="product.count" [(ngModel)]="product.count"></td>
+        </tr>
+        <tr>
+          <td><button class="button1" (click)="this.addToCart(product)">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td><button routerLink="productOverview">Produkt ansehen</button></td>
+        </tr>
+      </table>
     <!-- <button class="button2" (click)="this.deleteProduct(product.id)">Delete</button>   -->
       
     
